@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('laut bagroud.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: rgba(0, 0, 50, 0.7);
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 28px;
+      color: #38bdf8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #e0f2fe;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #0a2e3e;
+      border-bottom: 2px solid #082e3e;
+      padding-bottom: 10px;
+    }
+
+    #about p {
+      font-size: 18px;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    #portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    #memori {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 20px;
+    }
+
+    .aktivitas-title {
+        text-decoration: none; /* hilangkan garis bawah */
+        color: #0a2e3e;        /* warna biru, sesuaikan sesuai tema */
+        font-weight: 600;
+        font-size: 22px;
+        transition: color 0.3s ease;
+      }
+      
+      .aktivitas-title:hover {
+        color:#0a2e3e ;
+        /* garis bawah saat hover bisa ditambahkan atau tetap tidak ada */
+        text-decoration: none; 
+      }
+      .Memori-title {
+        text-decoration: none; /* hilangkan garis bawah */
+        color: #0a2e3e;        /* warna biru, sesuaikan sesuai tema */
+        font-weight: 600;
+        font-size: 22px;
+        transition: color 0.3s ease;
+      }
+      .Memori-title:hover {
+        color:#0a2e3e ;
+        /* garis bawah saat hover bisa ditambahkan atau tetap tidak ada */
+        text-decoration: none; 
+      }
+      .Blog-title {
+        text-decoration: none; /* hilangkan garis bawah */
+        color: #0a2e3e;        /* warna biru, sesuaikan sesuai tema */
+        font-weight: 600;
+        font-size: 22px;
+        transition: color 0.3s ease;
+      }    
+      .Blog-title:hover {
+        color:#0a2e3e ;
+        /* garis bawah saat hover bisa ditambahkan atau tetap tidak ada */
+        text-decoration: none; 
+      }
+    .project-desc {
+      font-size: 16px;
+      color: #e0f2fe;
+    }
+    .project-links {
+      margin-top: 15px;
+    }
+    .project-links a {
+      margin-right: 10px;
+      color: #0a2e3e;
+      font-size: 18px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .project-links a:hover {
+      color: #0ea5e9;
+    .wave {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: url('https://svgshare.com/i/ukS.svg') repeat-x;
+      background-size: contain;
+      animation: wave 10s linear infinite;
+      z-index: 0;
+      opacity: 0.5;
+    }
+    }
+    @keyframes wave {
+      0% { background-position-x: 0; }
+      100% { background-position-x: 1000px; }
+    }
+    footer {
+      background: rgba(0, 0, 50, 0.7);
+      text-align: center;
+      color: #cbd5e1;
+      padding: 20px;
+      margin-top: 60px;
+      position: relative;
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      .project img {
+        height: 160px;
+      }
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+    }
